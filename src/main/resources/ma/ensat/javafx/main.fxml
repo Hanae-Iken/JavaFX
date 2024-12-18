@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="ma.ensat.javafx.Controller.MainController">
+    <HBox spacing="10">
+        <Label text="Formation:"/>
+        <ComboBox fx:id="formationComboBox"/>
+    </HBox>
+
+    <TableView fx:id="studentTable">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID"/>
+            <TableColumn fx:id="nameColumn" text="Name"/>
+            <TableColumn fx:id="moyColumn" text="Moyenne"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="10">
+        <Label text="Moyenne de la Formation:"/>
+        <Label fx:id="formationAverageLabel"/>
+    </HBox>
+
+    <Button fx:id="addStudentButton" text="Ajouter étudiant" onAction="#openAddStudentDialog"/>
+</VBox>
+

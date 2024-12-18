@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="ma.ensat.javafx.Controller.AddStudentController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <Label text="Ajouter un étudiant"/>
+    <TextField fx:id="idField" promptText="ID"/>
+    <TextField fx:id="nameField" promptText="Nom"/>
+    <TextField fx:id="moyField" promptText="Moyenne"/>
+    <Button fx:id="saveButton" text="Enregistrer" onAction="#saveStudent"/>
+    <Button fx:id="cancelButton" text="Annuler" onAction="#closeWindow"/>
+</VBox>
